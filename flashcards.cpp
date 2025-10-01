@@ -46,6 +46,7 @@ size_t questionCount = 0;
 /* 
  * NAME 
  *   scanTextFile - insert each line of a text file into an array of strings
+ *
  * DESCRIPTION
  *   scanTextFile takes two parameters, an array of strings, and a string for the file.
  *   This array of strings will be where ecah line of the text file will be inserted into.
@@ -58,9 +59,10 @@ scanTextFile(string arrOut[MAX], string file);
 /*
  * NAME
  *   initBools - initialize an array of booleans to value
+ *
  * DESCRIPTION
  *   initBools takes one parameter, a boolean value.
- *   The funcion will return an array of booleans that is initialized to all be the same value as value.
+ *   This function will return an array of booleans that is initialized to all be the same value as value.
  */
 bool*
 initBools(bool value);
@@ -68,6 +70,7 @@ initBools(bool value);
 /*
  * NAME
  *   askQuestions - ask questions
+ *
  * DESCRIPTION
  *   ask questions :>
  *   Not sure why I felt the need to turn this into a seperate function but here we are.
@@ -78,20 +81,33 @@ askQuestions(string* questions, string* answers);
 /*
  * NAME
  *   chooseIndex - chooses random unchosen number
+ *
  * DESCRIPTION
  *   chooseIndex takes one parameter, an array of booleans.
- *   The function will return an integer, this integer will be chosen at random as is guarenteed to not have been chosen since the beginning of the askQuestions function.
+ *   This function will return an integer, this integer will be chosen at random as is guarenteed to not have been chosen since the beginning of the askQuestions function.
  */
 int
 chooseIndex(bool chosen[MAX]);
 
 /*
- *
+ * NAME
+ *   convertDecimalToHex - converts decimal number to hexadecimal
+ * 
+ * DESCRIPTION
+ *   convertDecimalToHex takes one parameter, a size_t.
+ *   This function will return a string, this string will be the hexadecimal equivalent to the decimal number that was entered.
  */
 string
 convertDecimalToHex (size_t decimal);
 
-// TODO
+/*
+ * NAME
+ *   convertDecimalToBase - converts decimal number to a number in a different base up to base64
+ * 
+ * DESCRIPTION
+ *   convertDecimalToBase takes two parameters, a size_t, and an int.
+ *   This function will return a string, this string is representative of the same decimal number that was entered in the base that was also entered.
+ */
 string
 convertDecimalToBase (size_t decimal, int base);
 

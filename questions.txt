@@ -84,3 +84,15 @@ What did the (IAS) LOAD instructions do?
 What did the (IAS) STOR instructions do?
 Which IAS instruction was used to go to a different part of the code?
 Which IAS instruction was used to end the program?
+What is Amdahl's Law?
+What was so significant about the 8086?
+What is response time?
+What is throughput?
+What is CPU time?
+What is user time?
+What is system time?
+How do you calculate weighted CPI average?
+What is 0x01234567 in Big-Endian?
+What is 0x01234567 in Little-Endian?
+How do you calculate yield?
+What is the cost of a CPU die?

@@ -1,0 +1,86 @@
+What's the binary bit pattern of TMIN?
+What's the binary bit pattern of TMAX?
+What's the binary bit pattern of UMIN?
+What's the binary bit pattern of UMAX?
+What's the value of TMIN?
+What's the value of TMAX?
+What's the value of UMIN?
+What's the value of UMAX?
+What's B2U (01 0110)?
+What's B2U (100 0111)?
+What's B2U (11 1000)?
+What's B2T (00 0010)?
+What's B2T (101 1010)?
+What's B2T (1010 0101)?
+Assuming the most significant digit is a 1, what is the difference between a signed and unsigned number with the same bit pattern? With word size being w
+What is the result of ! ((x + 1) & x) if x = 5? Assuming all numbers are unsigned
+What is the result of (x + 2) | x if x = 6? Assuming all numbers are unsigned
+What is the result of (12 | 7) & 4? Assuming all numbers are unsigned
+What is the result of ((15 ^ 8) | 4) & 13? Assuming all numbers are unsigned
+Suppose x is a signed byte 1111 0100, what is the bit pattern of x >> 2?
+Suppose x is an unsigned byte 1010 1000, what is the bit pattern of x >> 4?
+Suppose x is a signed byte 0010 1111, what is the bit pattern of x << 3?
+Suppose x is an unsigned byte 0000 1010, what is the bit pattern of x << 2?
+How to correct an incorrect signed right shift?
+What's every component of Moore's Law?
+What is the time frame associated with Moore's Law?
+What is the increased transister count associated with Moore's Law?
+What would be the area of the future chips according to Moore's Law?
+How do you calculate the size of next generation nodes?
+How do you calculate the size of previous generation nodes?
+Imagine that Apple made a 6nm process, assuming they want to keep track with Moore's Law, what would be the size of their next node, and the size of their previous node?
+Imagine that Samsung made a 2nm process, assuming they want to keep track with Moore's Law, what would be the size of their next node, and the size of their previous node?
+Imagine that Intel made a 10nm process (in 2025 lmao), assuming they want to keep track with Moore's Law, what would be the size of their next node, and the size of their previous node?
+What does the MAR do?
+What does the MBR do?
+What does the AC do?
+What does the IR do?
+What does the PC (IAS) do?
+What does the IBR do?
+What is the true, and the expected result of 5 * -9, assuming 4 bit words?
+What is the true, and the expected result of 8 * -13, assuming 5 bit words?
+What is the true, and the expected result of 3 * 5, assuming 3 bit words?
+Where is silicon extracted from?
+What happens to silicon once it's extracted?
+What goes after the silicon ingot step when creating a processor?
+What goes after the silicon slicing step when creating a processor?
+What does the slicing step create?
+What is the process that imprints the patterns of the chips onto wafers?
+What is the highest layer of a computer system?
+What is the second highest layer of a computer system?
+What is the third highest layer of a computer system?
+What is the third lowest layer of a computer system?
+What is the second lowest layer of a computer system?
+What is the lowest layer of a computer system?
+What is the earliest generation of computers?
+What is the second earliest generation of computers?
+What is the third earliest generation of computers?
+What is the third latest generation of computers?
+What is the second latest generation of computers?
+What is the latest generation of computers? (Which overlaps with the gen before it)
+What is the significance about Babbage?
+What is the significance about von Neumann?
+What is the significance about Moore?
+What was the ENIAC?
+Who contracted the builders of the ENIAC for its use?
+What was the ENIAC used for?
+How large was the ENIAC?
+How many vaccum tubes did the ENIAC have?
+How many additions ber second could the ENIAC do?
+What was the IAS?
+Who built the IAS?
+What were the two main units of the IAS?
+How many bits were needed to hold an instruction on the IAS?
+How many instructions did the IAS have?
+What is the x86 architecture?
+What was significant about the A7?
+How would you take bits 4 to 10 (inclusive) from int x and place them in the low bits of y in C?
+How would you take bits 3 to 11 (inclusive) from int x and place them in the low bits of y in C?
+How would you take bits 6 to 13 (inclusive) from int x and place them in the low bits of y in C?
+How would you take bits 12 to 21 (inclusive) from int x and place them in the low bits of y in C?
+How do you calculate the time of a program?
+How to you calculate the power of a CPU?
+What did the (IAS) LOAD instructions do?
+What did the (IAS) STOR instructions do?
+Which IAS instruction was used to go to a different part of the code?
+Which IAS instruction was used to end the program?

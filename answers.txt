@@ -84,3 +84,15 @@ They load information from memory into the AC
 They store information from the AC into memory
 The JUMP instruction
 The HALT instruction
+Time_improved = (Time_affected / improvement factor) + Time_unaffected
+It was the beginning of the x86 instruction set
+How long it takes to do a task
+Work per unit time
+User time + system time 
+Time spent in user mode
+Time spend in kernel mode
+CPI = CC / IC
+01 23 45 67
+67 45 23 01
+Yield = 1 / (1 + (Defects per area* Die area)) ^ 2
+Cost of wafer / dies per wafer * Yield

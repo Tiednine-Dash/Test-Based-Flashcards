@@ -32,6 +32,7 @@ using std::stack;
 const int MAX = 1024;
 const int HEX = 16;
 const string DIGITS = "012345689ABCDEFGHIJKLMNOPQRSTUIWXYZabcdefghijklmnopqrstuvwxyz+/";
+string generators[MAX];
 
 ///////////////
 ////GLOBALS////
@@ -51,9 +52,9 @@ size_t questionCount = 0;
  *   scanTextFile takes two parameters, an array of strings, and a string for the file.
  *   This array of strings will be where ecah line of the text file will be inserted into.
  *   The file string is the path within the working directory where the text file will be located.
- *  It would be easier for the user if I could get this to return an array of strings instead of taking one as a parameter but it's almost been 3 hours since I started this and I'll never get any studying done at this rate.
+ *   This function returns an integer, which is how many lines were scanned;
  */
-void
+int
 scanTextFile(string arrOut[MAX], string file);
 
 /*
@@ -119,45 +120,34 @@ int
 main()
 {
   string questions[MAX];
-  scanTextFile(questions, "questions.txt");
+  questionCount = scanTextFile(questions, "questions.txt") - 1;
 
   string answers[MAX];
   scanTextFile(answers, "answers.txt");
-
-  // TODO
-  // Add feature that creates problems for you
-  // e.g. B2U (random number)
-  // Will probably be done by making this array of strings one that will be scanned to determine keyword like "B2U" from the question, and then generating a random B2U problem
-  //string randomized[MAX];
-  //scanTextFile(randomize, "randomize.txt");
-
-  // questionCount will be off by realQuestionCount * numberOfTimesScanTextFileIsCalled + numberOfTimesScanTextFileIsCalled - 1, this will correct that
-  questionCount /= 2;
-  --questionCount;
 
   askQuestions(questions, answers);
 
   return EXIT_SUCCESS;
 }
 
-void
+int
 scanTextFile(string arrOut[MAX], string file)
 {
-  //static string arrOut[MAX];
+  int lineCount = 0;
   ifstream fileIn(file);
 
   if (fileIn.is_open())
   {
     string line;
 
-    for (int i = 0; !fileIn.fail() || i >= MAX; ++i, ++questionCount)
+    for (int i = 0; !fileIn.fail() || i >= MAX; ++i, ++lineCount)
       getline(fileIn, arrOut[i]);
 
     fileIn.close();
   }
   else
     cout << file << " isn't open" << endl;
-  //return arrOut;
+  return lineCount;
 }
 
 bool*
@@ -175,6 +165,14 @@ void
 askQuestions(string* questions, string* answers)
 {
   bool* answered = initBools(false);
+  string question, answer;
+  int generatorIndex;
+
+  // TODO
+  // Add feature that creates problems for you
+  // e.g. B2U (random number)
+  // Will probably be done by making this array of strings one that will be scanned to determine keyword like "B2U" from the question, and then generating a random B2U problem
+  scanTextFile(generator, "generators.txt");
 
   // Set "seed" for random questions
   srand(time(0));
@@ -184,8 +182,16 @@ askQuestions(string* questions, string* answers)
   {
     randomQuestion = chooseIndex(answered);
 
+    if (scanGenerator(generatorIndex))
+    {
+      question = generateQuestion(generatorIndex);
+      answer = generateAnswer(generatorIndex);
+    }
+    else
+      question = questions[randomQuestion];
+
     // Ask question
-    cout << questionsAnswered + 1 << ". " << questions[randomQuestion];
+    cout << questionsAnswered + 1 << ". " << question;
 
     // Wait user enter
     // TODO Add some feature to keep track of number of correct and wrong answers

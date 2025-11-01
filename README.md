@@ -1,4 +1,4 @@
-# Text-Based-Flashcards
+# Command Line Flashcards
 Very simple program to simulate the use of flashcards within the command line.
 
 # Reason for making this

@@ -2,7 +2,7 @@
 Very simple program to simulate the use of flashcards within the command line.
 
 # Reason for making this
-Use quizlet and was charged to create more than a couple sets of flashcards
+Used quizlet and was charged to create more than a couple sets of flashcards, and I just think it'll be fun
 
 # How to use
 Compile the program with your favorite C++ compiler,
